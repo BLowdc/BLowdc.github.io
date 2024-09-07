@@ -1,0 +1,21 @@
+
+body
+{background-color: rgb(190, 240, 221);}
+
+#stats
+{text-align: center; color:rgb(41, 167, 24); 
+padding: 10px; border: double 3px black; 
+margin-left: 100px; margin-right: 100px; margin-top: 30px}
+
+#stats h1
+{font-weight: 400;}
+
+#left-list
+{padding-top: 10px; padding-bottom: 10px; 
+padding-left: 30px; padding-right: 30px;
+border: solid 3px goldenrod;  float: left; margin-top: 30px; margin-left: 50px}
+
+#right-list
+{padding-top: 10px; padding-bottom: 10px; 
+    padding-left: 30px; padding-right: 30px;
+    border: solid 3px goldenrod; float: right ; margin-top: 30px; margin-right: 50px}
