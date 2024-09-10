@@ -10,12 +10,22 @@ margin-left: 100px; margin-right: 100px; margin-top: 30px}
 #stats h1
 {font-weight: 400;}
 
-#left-list
-{padding-top: 10px; padding-bottom: 10px; 
-padding-left: 30px; padding-right: 30px;
-border: solid 3px goldenrod;  float: left; margin-top: 30px; margin-left: 50px}
+#image-text
+{margin: 50px}
 
-#right-list
-{padding-top: 10px; padding-bottom: 10px; 
-    padding-left: 30px; padding-right: 30px;
-    border: solid 3px goldenrod; float: right ; margin-top: 30px; margin-right: 50px}
+#middle
+{float: right;
+width: 350px; padding: 10px; 
+border: solid 3px rgb(228, 134, 11)}
+
+#middle h3
+{text-align: center}
+
+#DC-pic
+{margin-top:55px}
+
+#desc
+{margin: 30px; padding: 30px; color:rgb(0, 0, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+    border: solid 5px white}
+
