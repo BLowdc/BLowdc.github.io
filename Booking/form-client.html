@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Your Seat</title>
+  <style>
+
+  </style>
+</head>
+<body>
+  <div>
+    <h2>Book Your Seat</h2>
+    <form id="seatForm" action="booking-server.html" method="get" onsubmit="return validateForm()">
+      <label for="row">Row (1–30):</label>
+      <input type="number" id="row" name="row" required>
+
+
+      <label for="seat">Seat (A–F):</label>
+      <input type="text" id="seat" name="seat" required>
+
+
+      <button type="submit">Book Seat</button>
+      <p id="errorMsg"></p>
+    </form>
+  </div>
+
+  <script>
+    function validateForm() {
+      const row = document.getElementById('row').value;
+      const seat = document.getElementById('seat').value;
+      const errorMsg = document.getElementById('errorMsg');
+      errorMsg.textContent = ''; // Clear previous error messages
+      var validRow = false
+      var validSeat = false
+
+      if (row < 1 || row > 30) {
+        document.getElementById('row').style.color = 'red';
+        errorMsg.textContent = 'Row must be between 1 and 30.';
+      }
+      else {
+        document.getElementById('row').style.color = 'black';
+        validRow = true
+      }
+
+      if (seat < 'A' || seat > 'F' || seat.length > 1) {
+        document.getElementById('seat').style.color = 'red';
+        errorMsg.textContent += ' Seat must be a single letter and between A and F.';
+      }
+      else {
+        document.getElementById('seat').style.color = 'black';
+        validSeat = true
+      }
+      
+      if (validRow && validSeat) {
+        return true;
+      }
+      else {
+        return false;
+      }
+    }
+  </script>
+</body>
+</html>
+ 
